@@ -1,0 +1,27 @@
+<h1>Listing lugars</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th>Municipio</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lugars.each do |lugar| %>
+  <tr>
+    <td><%= lugar.nombre %></td>
+    <td><%= lugar.tipo %></td>
+    <td><%= lugar.municipio %></td>
+    <td><%= link_to 'Show', lugar %></td>
+    <td><%= link_to 'Edit', edit_lugar_path(lugar) %></td>
+    <td><%= link_to 'Destroy', lugar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lugar', new_lugar_path %>

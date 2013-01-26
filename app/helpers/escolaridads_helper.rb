@@ -1,0 +1,2 @@
+module EscolaridadsHelper
+end

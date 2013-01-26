@@ -1,0 +1,23 @@
+<h1>Listing escolaridads</h1>
+
+<table>
+  <tr>
+    <th>Grado</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @escolaridads.each do |escolaridad| %>
+  <tr>
+    <td><%= escolaridad.grado %></td>
+    <td><%= link_to 'Show', escolaridad %></td>
+    <td><%= link_to 'Edit', edit_escolaridad_path(escolaridad) %></td>
+    <td><%= link_to 'Destroy', escolaridad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Escolaridad', new_escolaridad_path %>

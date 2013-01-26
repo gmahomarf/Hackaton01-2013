@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tipo: 
+  departamento: 
+  municipio: 
+  lugar: 
+  fecha_incidente: 2013-01-26
+  fecha_primera_audiencia: 2013-01-26
+  fecha_segunda_audiencia: 2013-01-26
+  fecha_sentencia: 2013-01-26
+  estado: MyString
+  institucion: 
+  observaciones: MyText
+  descripcion_hechos: MyText
+
+two:
+  tipo: 
+  departamento: 
+  municipio: 
+  lugar: 
+  fecha_incidente: 2013-01-26
+  fecha_primera_audiencia: 2013-01-26
+  fecha_segunda_audiencia: 2013-01-26
+  fecha_sentencia: 2013-01-26
+  estado: MyString
+  institucion: 
+  observaciones: MyText
+  descripcion_hechos: MyText

@@ -1,0 +1,26 @@
+<%= simple_form_for(@persona, :html => { :class => 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nombre %>
+    <%= f.input :apellido %>
+    <%= f.input :cedula %>
+    <%= f.input :lugar_nacimiento %>
+    <%= f.input :fecha_nacimiento %>
+    <%= f.association :escolaridad %>
+    <%= f.input :ocupacion %>
+    <%= f.association :estado_civil %>
+    <%= f.input :discapacidad %>
+    <%= f.input :reincidente %>
+    <%= f.input :incidentes %>
+    <%= f.input :hijos %>
+    <%= f.input :hijas %>
+    <%= f.input :casa %>
+    <%= f.input :ingreso_promedio %>
+    <%= f.input :jafatura_hogar %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

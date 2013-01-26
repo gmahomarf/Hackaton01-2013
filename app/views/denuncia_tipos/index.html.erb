@@ -1,0 +1,23 @@
+<h1>Listing denuncia_tipos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @denuncia_tipos.each do |denuncia_tipo| %>
+  <tr>
+    <td><%= denuncia_tipo.nombre %></td>
+    <td><%= link_to 'Show', denuncia_tipo %></td>
+    <td><%= link_to 'Edit', edit_denuncia_tipo_path(denuncia_tipo) %></td>
+    <td><%= link_to 'Destroy', denuncia_tipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Denuncia tipo', new_denuncia_tipo_path %>

@@ -1,0 +1,22 @@
+<%= simple_form_for(@denuncium, :html => { :class => 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :tipo %>
+    <%= f.association :departamento %>
+    <%= f.association :municipio %>
+    <%= f.association :lugar %>
+    <%= f.input :fecha_incidente %>
+    <%= f.input :fecha_primera_audiencia %>
+    <%= f.input :fecha_segunda_audiencia %>
+    <%= f.input :fecha_sentencia %>
+    <%= f.input :estado %>
+    <%= f.association :institucion %>
+    <%= f.input :observaciones %>
+    <%= f.input :descripcion_hechos %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

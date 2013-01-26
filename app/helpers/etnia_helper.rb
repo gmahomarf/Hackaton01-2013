@@ -1,0 +1,2 @@
+module EtniaHelper
+end
