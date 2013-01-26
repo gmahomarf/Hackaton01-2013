@@ -4,6 +4,12 @@ gem 'rails', '3.2.11'
 
 gem 'pg'
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "sextant"
+end 
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

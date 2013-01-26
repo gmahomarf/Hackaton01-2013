@@ -1,5 +1,5 @@
 class Denuncium < ActiveRecord::Base
-  belongs_to :tipo
+  belongs_to :tipo, :class_name => 'DenunciaTipo'
   belongs_to :departamento
   belongs_to :municipio
   belongs_to :lugar
