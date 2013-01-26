@@ -1,4 +1,7 @@
 Hackaton::Application.routes.draw do
+  resources :etnias
+
+
   resources :denuncia_tipos
 
 
@@ -23,7 +26,7 @@ Hackaton::Application.routes.draw do
   resources :escolaridads
 
 
-  resources :etnia
+  resources :etnias, :as => 'etnias'
 
 
   resources :estado_civils

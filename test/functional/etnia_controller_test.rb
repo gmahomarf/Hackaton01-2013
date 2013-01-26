@@ -44,6 +44,6 @@ class EtniaControllerTest < ActionController::TestCase
       delete :destroy, id: @etnium
     end
 
-    assert_redirected_to etnia_index_path
+    assert_redirected_to etnias_path
   end
 end
