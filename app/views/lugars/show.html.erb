@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @lugar.nombre %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @lugar.tipo %>
+</p>
+
+<p>
+  <b>Municipio:</b>
+  <%= @lugar.municipio %>
+</p>
+
+
+<%= link_to 'Edit', edit_lugar_path(@lugar) %> |
+<%= link_to 'Back', lugars_path %>

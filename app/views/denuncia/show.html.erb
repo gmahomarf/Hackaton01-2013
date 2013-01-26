@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @denuncium.tipo %>
+</p>
+
+<p>
+  <b>Departamento:</b>
+  <%= @denuncium.departamento %>
+</p>
+
+<p>
+  <b>Municipio:</b>
+  <%= @denuncium.municipio %>
+</p>
+
+<p>
+  <b>Lugar:</b>
+  <%= @denuncium.lugar %>
+</p>
+
+<p>
+  <b>Fecha incidente:</b>
+  <%= @denuncium.fecha_incidente %>
+</p>
+
+<p>
+  <b>Fecha primera audiencia:</b>
+  <%= @denuncium.fecha_primera_audiencia %>
+</p>
+
+<p>
+  <b>Fecha segunda audiencia:</b>
+  <%= @denuncium.fecha_segunda_audiencia %>
+</p>
+
+<p>
+  <b>Fecha sentencia:</b>
+  <%= @denuncium.fecha_sentencia %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @denuncium.estado %>
+</p>
+
+<p>
+  <b>Institucion:</b>
+  <%= @denuncium.institucion %>
+</p>
+
+<p>
+  <b>Observaciones:</b>
+  <%= @denuncium.observaciones %>
+</p>
+
+<p>
+  <b>Descripcion hechos:</b>
+  <%= @denuncium.descripcion_hechos %>
+</p>
+
+
+<%= link_to 'Edit', edit_denuncium_path(@denuncium) %> |
+<%= link_to 'Back', denuncia_path %>

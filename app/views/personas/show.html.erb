@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @persona.nombre %>
+</p>
+
+<p>
+  <b>Apellido:</b>
+  <%= @persona.apellido %>
+</p>
+
+<p>
+  <b>Cedula:</b>
+  <%= @persona.cedula %>
+</p>
+
+<p>
+  <b>Lugar nacimiento:</b>
+  <%= @persona.lugar_nacimiento %>
+</p>
+
+<p>
+  <b>Fecha nacimiento:</b>
+  <%= @persona.fecha_nacimiento %>
+</p>
+
+<p>
+  <b>Escolaridad:</b>
+  <%= @persona.escolaridad %>
+</p>
+
+<p>
+  <b>Ocupacion:</b>
+  <%= @persona.ocupacion %>
+</p>
+
+<p>
+  <b>Estado civil:</b>
+  <%= @persona.estado_civil %>
+</p>
+
+<p>
+  <b>Discapacidad:</b>
+  <%= @persona.discapacidad %>
+</p>
+
+<p>
+  <b>Reincidente:</b>
+  <%= @persona.reincidente %>
+</p>
+
+<p>
+  <b>Incidentes:</b>
+  <%= @persona.incidentes %>
+</p>
+
+<p>
+  <b>Hijos:</b>
+  <%= @persona.hijos %>
+</p>
+
+<p>
+  <b>Hijas:</b>
+  <%= @persona.hijas %>
+</p>
+
+<p>
+  <b>Casa:</b>
+  <%= @persona.casa %>
+</p>
+
+<p>
+  <b>Ingreso promedio:</b>
+  <%= @persona.ingreso_promedio %>
+</p>
+
+<p>
+  <b>Jafatura hogar:</b>
+  <%= @persona.jafatura_hogar %>
+</p>
+
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>

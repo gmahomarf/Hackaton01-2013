@@ -1,0 +1,45 @@
+<h1>Listing denuncia</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Departamento</th>
+    <th>Municipio</th>
+    <th>Lugar</th>
+    <th>Fecha incidente</th>
+    <th>Fecha primera audiencia</th>
+    <th>Fecha segunda audiencia</th>
+    <th>Fecha sentencia</th>
+    <th>Estado</th>
+    <th>Institucion</th>
+    <th>Observaciones</th>
+    <th>Descripcion hechos</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @denuncia.each do |denuncium| %>
+  <tr>
+    <td><%= denuncium.tipo %></td>
+    <td><%= denuncium.departamento %></td>
+    <td><%= denuncium.municipio %></td>
+    <td><%= denuncium.lugar %></td>
+    <td><%= denuncium.fecha_incidente %></td>
+    <td><%= denuncium.fecha_primera_audiencia %></td>
+    <td><%= denuncium.fecha_segunda_audiencia %></td>
+    <td><%= denuncium.fecha_sentencia %></td>
+    <td><%= denuncium.estado %></td>
+    <td><%= denuncium.institucion %></td>
+    <td><%= denuncium.observaciones %></td>
+    <td><%= denuncium.descripcion_hechos %></td>
+    <td><%= link_to 'Show', denuncium %></td>
+    <td><%= link_to 'Edit', edit_denuncium_path(denuncium) %></td>
+    <td><%= link_to 'Destroy', denuncium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Denuncium', new_denuncium_path %>

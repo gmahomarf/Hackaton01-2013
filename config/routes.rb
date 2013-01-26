@@ -1,4 +1,34 @@
 Hackaton::Application.routes.draw do
+  resources :denuncia_tipos
+
+
+  resources :denuncia
+
+
+  resources :personas
+
+
+  resources :departamentos
+
+
+  resources :municipios
+
+
+  resources :lugars
+
+
+  resources :institucions
+
+
+  resources :escolaridads
+
+
+  resources :etnia
+
+
+  resources :estado_civils
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
